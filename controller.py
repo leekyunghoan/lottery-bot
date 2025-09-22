@@ -71,6 +71,7 @@ def buy():
 
     username = os.environ.get('USERNAME')
     password = os.environ.get('PASSWORD')
+    count = 1
     count = int(os.environ.get('COUNT'))
     slack_webhook_url = os.environ.get('SLACK_WEBHOOK_URL') 
     discord_webhook_url = os.environ.get('DISCORD_WEBHOOK_URL')
