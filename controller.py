@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 import auth
 import lotto645
-import win720
 import notification
 import time
 
