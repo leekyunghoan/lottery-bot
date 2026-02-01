@@ -80,10 +80,10 @@ def check():
     response = check_winning_lotto645(auth_ctrl)
     send_message(0, 0, response=response, webhook_url=webhook_url)
 
-    time.sleep(10)
+    #time.sleep(10)
     
-    response = check_winning_win720(auth_ctrl)
-    send_message(0, 1, response=response, webhook_url=webhook_url)
+    #response = check_winning_win720(auth_ctrl)
+    #send_message(0, 1, response=response, webhook_url=webhook_url)
 
 def buy(): 
     load_dotenv(override=True) 
@@ -95,13 +95,13 @@ def buy():
     response = buy_lotto645(auth_ctrl, count, mode) 
     send_message(1, 0, response=response, webhook_url=webhook_url)
 
-    time.sleep(10)
+    #time.sleep(10)
 
-    auth_ctrl.http_client.session.cookies.clear()
-    auth_ctrl, username, webhook_url = _setup_and_login()
+    #auth_ctrl.http_client.session.cookies.clear()
+    #auth_ctrl, username, webhook_url = _setup_and_login()
 
-    response = buy_win720(auth_ctrl, username) 
-    send_message(1, 1, response=response, webhook_url=webhook_url)
+    #response = buy_win720(auth_ctrl, username) 
+    #send_message(1, 1, response=response, webhook_url=webhook_url)
 
 def lotto_buy():
     load_dotenv(override=True)
